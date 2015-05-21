@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="6dip"
+        android:layout_marginEnd="6dip"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/authorTextView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/commitTextView"
+        android:layout_below="@+id/authorTextView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_alignRight="@+id/authorTextView"
+        android:layout_alignEnd="@+id/authorTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/commitMsgTextView"
+        android:layout_below="@+id/commitTextView"
+        android:layout_alignLeft="@+id/commitTextView"
+        android:layout_alignStart="@+id/commitTextView"
+        android:layout_alignRight="@+id/commitTextView"
+        android:layout_alignEnd="@+id/commitTextView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+</RelativeLayout>
